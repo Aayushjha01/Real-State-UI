@@ -21,7 +21,7 @@ export const Navbar = () => {
       <div className="menuicon">
         <img src="/menu.png" alt="" onClick={()=> setOpen((prev)=>!prev)}/>
         </div>
-        <div className={open ? " menu active" : " menu " } >
+        <div className={open ? " menu-active" : " menu-inactive " } >
           <a href="/">Home</a>
           <a href="/">About</a>
           <a href="/">Contact</a>
