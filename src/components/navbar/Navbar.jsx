@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './navbar.scss'
 
-export const Navbar = () => {
+export const NavBar = () => {
   const[open,setOpen] = useState(false)
   return (
    <nav>
