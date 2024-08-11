@@ -26,7 +26,8 @@ const SinglePage = () => {
               </div>
             </div>
             <div className="bottom">
-           {singlePostData.description}
+              <p> {singlePostData.description}</p>
+          
             </div>
           </div>
         </div>

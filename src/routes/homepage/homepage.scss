@@ -16,8 +16,11 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            gap: 20px;
-            height: 60%;
+            gap: 10px;
+            height: 100%;
+            p {
+                text-align: justify;
+              }
             @include md{
                 height: 80%;
             }
@@ -31,6 +34,10 @@
             
             .title {
                 font-size: 44px;
+                h1 {
+                    text-align: justify;
+                  }
+                  
 
             }
             
