@@ -17,14 +17,14 @@ const SearchBar = () => {
    <div className="searchbar">
     <div className="type">
         {types.map((type)=>(
-            <button key={type} onClick={()=>switchType(type)} className={query.type===type ? "active":""}>{type}</button>
+    <button key={type} onClick={()=>switchType(type)} className={query.type===type ? "active":""}>{type}</button>
         ))}
        
     </div>
     <form action="">
         <input type="text" name="location"  placeholder='City Location' />
         <input type="number" name="minPrice" min={0} max={10000} placeholder='MinPrice' />
-        <input type="number" name="maxPrice" min={0} max={10000}id="" placeholder='MaxPrice'/>
+        <input type="number" name="maxPrice" min={0} max={10000} placeholder='MaxPrice'/>
         <button>
             <img src="/search.png" alt="" />
         </button>

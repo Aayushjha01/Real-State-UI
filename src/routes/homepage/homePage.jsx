@@ -29,7 +29,7 @@ const HomePage = () => {
             </div>
             <div className="box">
               <h2>2000+</h2>
-              <h6>Property Ready</h6>
+              <h6>Property is Ready</h6>
             </div>
           </div>
         </div>

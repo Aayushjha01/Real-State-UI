@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './navbar.scss'
 
 export const NavBar = () => {
-  const[open,setOpen] = useState(false)
+  const user = false;
+ 
   return (
    <nav>
     <div className="left">
@@ -15,9 +16,16 @@ export const NavBar = () => {
     <a href="/">Contact</a>
     <a href="/">Agent</a>
     </div>
+    
     <div className="right">
+    {
+      user ? (<div>
+        <img src="/logo.png" alt="" />
+        <span>John doe</span>
+      </div>) :(<>
       <a href="/">SignIn</a>
-      <a href="/" className='register'>SignOut</a>
+      <a href="/" className='register'>SigUp</a></>)
+    }
       <div className="menuicon">
         <img src="/menu.png" alt="" onClick={()=> setOpen((prev)=>!prev)}/>
         </div>
