@@ -1,12 +1,12 @@
 import React from 'react'
 import './profilePage.scss'
 
-const profilePage = () => {
+const ProfilePage = () => {
   return (
     <div className="profilePage">
-
+    ihihiohih
     </div>
   )
 }
 
-export default profilePage
+export default ProfilePage
