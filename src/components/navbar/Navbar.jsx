@@ -10,7 +10,7 @@ export const NavBar = () => {
    <nav>
     <div className="left">
     <a href="/" className='logo'>
-      <img src="./logo.png" alt=""  />
+      <img src="./logo.png" alt=""/>
       <span>Coding State</span>
     </a>
     <a href="/">Home</a>
@@ -24,10 +24,13 @@ export const NavBar = () => {
       user ? (<div className='user'>
         <img src="/logo.png" alt="" />
         <span>John doe</span>
-        <Link to="/user" className='profile'>Profile</Link>
+        <Link to="/user" className='profile'>
+        <div className="notification">3</div>
+        <span>Profile</span>
+        </Link>
       </div>) :(<>
       <a href="/">SignIn</a>
-      <a href="/" className='register'>SigUp</a>
+      <a href="/" className='register'>SignUp</a>
     
       </>
    
