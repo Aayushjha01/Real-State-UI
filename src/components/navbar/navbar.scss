@@ -72,9 +72,29 @@ gap: 50px;
         }
         .profile{
             background-color: #fece51;
-            padding: 5px;
+            padding: 5px 12px;
             border-radius: 5px;
             position: relative;
+            span{
+                @include sm{
+                    display: none;
+                }
+            }
+
+            .notification{
+
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: red;
+                color: white;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
         }
       }
       
