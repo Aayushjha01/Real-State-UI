@@ -43,6 +43,7 @@
             </div>
         </div>
         <div className="chatbox">Box</div>
+        <h1>Changes in chat</h1>
      </div>
    )
  }
