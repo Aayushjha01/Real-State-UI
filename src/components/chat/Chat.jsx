@@ -44,6 +44,7 @@
         </div>
         <div className="chatbox">Box</div>
         <h1>Changes in chat</h1>
+        <h2>hello tomorrow is my day i have strong believe</h2>
      </div>
    )
  }
