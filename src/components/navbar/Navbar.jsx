@@ -14,7 +14,7 @@ export const NavBar = () => {
       <span>Coding State</span>
     </a>
     <a href="/">Home</a>
-    <a href="/">About</a>
+    <Link to="/list">List</Link>
     <a href="/">Contact</a>
     <a href="/">Agent</a>
     </div>
