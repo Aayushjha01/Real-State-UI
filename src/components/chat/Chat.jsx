@@ -1,7 +1,9 @@
- import React from 'react';
+ import React, { useState } from 'react';
  import './chat.scss';
  
  const Chat = () => {
+    const [chat,setChat]= useState(true)
+
    return (
      <div className="chat">
         <div className="mesagges">
@@ -42,9 +44,58 @@
                 </p>
             </div>
         </div>
-        <div className="chatbox">Box</div>
-        <h1>Changes in chat</h1>
-        <h2>hello tomorrow is my day i have strong believe</h2>
+        {chat &&(<div className="chatbox">
+            <div className="top">
+                <div className="user">
+                    <img src="/logo.png" alt="" />
+                    John doe
+                </div>
+                <span className="close" onClick={()=>setChat(null)}>X</span>
+            </div>
+            <div className="center">
+                <div className="chatMessage">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage own">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage own">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage ">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage own">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage ">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage own">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+                <div className="chatMessage ">
+                    <p>Lorem Message ...</p>
+                    <span>1 hour later</span>
+                </div>
+            </div>
+            <div className="bottom">
+                <textarea name="" id=""></textarea>
+                <button>Send</button>
+            </div>
+        </div>)}
+        
      </div>
    )
  }

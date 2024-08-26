@@ -24,7 +24,7 @@ export const NavBar = () => {
       user ? (<div className='user'>
         <img src="/logo.png" alt="" />
         <span>John doe</span>
-        <Link to="/user" className='profile'>
+        <Link to="/profile" className='profile'>
         <div className="notification">3</div>
         <span>Profile</span>
         </Link>
@@ -46,9 +46,8 @@ export const NavBar = () => {
           <a href="/">Agents</a>
           <a href="/">Sign in</a>
           <a href="/">Sign up</a>
-          </div>
-     
-    </div>
+      </div>
+     </div>
    </nav>
   )
 }

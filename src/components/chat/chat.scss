@@ -36,7 +36,83 @@
     }
     .chatbox{
         flex: 1;
-        // background-color: rebeccapurple;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top{
+           
+            background-color: #f7c14b85;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            font-weight: bold;
+           
+            .user{
+                display: flex;
+                
+              align-items: center;
+              gap: 20px;
+             
+                img{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .close{
+                cursor: pointer;
+
+            }
+        }
+        .center{
+            overflow: scroll;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 250px;
+            .chatMessage{
+                 width: 50%;
+                &.own{
+                    align-self: flex-end;
+                    text-align: right;
+                }
+                span{
+                    font-weight: bold;
+                    cursor: pointer;
+                    background-color: #f7c14b85;
+                    border-radius: 5px;
+                }
+            }
+           
+        }
+        .bottom{
+            border: 2px solid #f7c14b85;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+            padding: 2px;
+            textarea{
+                flex: 3;
+                height: 100%;
+                border: none;
+                padding: 20px;
+            }
+            button{
+                flex: 1;
+               
+                border: none;
+                border-radius: 10px;
+                background-color: #f7c14b85;
+               height: 100%;
+            }
+        }
+
     }
 
 }
